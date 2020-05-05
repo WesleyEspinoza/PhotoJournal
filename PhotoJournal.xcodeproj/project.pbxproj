@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544B886CDAE022591D1558C5 /* Pods_PhotoJournal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD046B90325C708A794022 /* Pods_PhotoJournal.framework */; };
+		57C99441BE82D86A008C6384 /* Pods_PhotoJournalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE39888A0229FA8E166F84B1 /* Pods_PhotoJournalTests.framework */; };
+		61A75C122454FD5000D750B7 /* MediaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A75C112454FD5000D750B7 /* MediaSelectorView.swift */; };
+		61A75C152456A0B000D750B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61A75C142456A0B000D750B7 /* GoogleService-Info.plist */; };
+		61A9244E24614DF200774523 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9244D24614DF200774523 /* Model.swift */; };
+		61B8075624509393004EAF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8075524509393004EAF61 /* AppDelegate.swift */; };
+		61B8075824509393004EAF61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8075724509393004EAF61 /* SceneDelegate.swift */; };
+		61B8075A24509393004EAF61 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8075924509393004EAF61 /* LoginSignUpViewController.swift */; };
+		61B8075F24509394004EAF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B8075E24509394004EAF61 /* Assets.xcassets */; };
+		61B8076224509394004EAF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B8076024509394004EAF61 /* LaunchScreen.storyboard */; };
+		61B8076D24509394004EAF61 /* PhotoJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8076C24509394004EAF61 /* PhotoJournalTests.swift */; };
+		61B8077824528A65004EAF61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8077724528A65004EAF61 /* LoginView.swift */; };
+		61B8077A2452AFF9004EAF61 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B807792452AFF9004EAF61 /* RegisterView.swift */; };
+		61B8077C2453EF27004EAF61 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8077B2453EF27004EAF61 /* UIViewControllerExt.swift */; };
+		61B8077E2454051D004EAF61 /* PhotoJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8077D2454051D004EAF61 /* PhotoJournalViewController.swift */; };
+		61B807822454074B004EAF61 /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B807812454074B004EAF61 /* PhotoCollectionView.swift */; };
+		61B8078424541323004EAF61 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8078324541323004EAF61 /* PhotoCollectionViewCell.swift */; };
+		61C9D78C2454912C00C1EB9E /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9D78B2454912C00C1EB9E /* UIColorExt.swift */; };
+		61C9D78E245499FC00C1EB9E /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C9D78D245499FC00C1EB9E /* JournalView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61B8076924509394004EAF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61B8074A24509393004EAF61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61B8075124509393004EAF61;
+			remoteInfo = PhotoJournal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AD046B90325C708A794022 /* Pods_PhotoJournal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoJournal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB0D6DC6408D7FAB56E1A2F /* Pods-PhotoJournalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoJournalTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoJournalTests/Pods-PhotoJournalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61A75C112454FD5000D750B7 /* MediaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelectorView.swift; sourceTree = "<group>"; };
+		61A75C1324566DDC00D750B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		61A75C142456A0B000D750B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61A9244D24614DF200774523 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		61B8075224509393004EAF61 /* PhotoJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B8075524509393004EAF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61B8075724509393004EAF61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61B8075924509393004EAF61 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		61B8075E24509394004EAF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61B8076124509394004EAF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61B8076324509394004EAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B8076824509394004EAF61 /* PhotoJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B8076C24509394004EAF61 /* PhotoJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalTests.swift; sourceTree = "<group>"; };
+		61B8076E24509394004EAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B8077724528A65004EAF61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		61B807792452AFF9004EAF61 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		61B8077B2453EF27004EAF61 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		61B8077D2454051D004EAF61 /* PhotoJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalViewController.swift; sourceTree = "<group>"; };
+		61B807812454074B004EAF61 /* PhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
+		61B8078324541323004EAF61 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		61C9D78B2454912C00C1EB9E /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		61C9D78D245499FC00C1EB9E /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		7A583D7750FD19BAE3D7753D /* Pods-PhotoJournal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoJournal.release.xcconfig"; path = "Target Support Files/Pods-PhotoJournal/Pods-PhotoJournal.release.xcconfig"; sourceTree = "<group>"; };
+		9D9F4A2CD821DD3651BEB7F5 /* Pods-PhotoJournal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoJournal.debug.xcconfig"; path = "Target Support Files/Pods-PhotoJournal/Pods-PhotoJournal.debug.xcconfig"; sourceTree = "<group>"; };
+		D63676659C7244CF4A9FDE88 /* Pods-PhotoJournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoJournalTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoJournalTests/Pods-PhotoJournalTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE39888A0229FA8E166F84B1 /* Pods_PhotoJournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoJournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61B8074F24509393004EAF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544B886CDAE022591D1558C5 /* Pods_PhotoJournal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B8076524509394004EAF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C99441BE82D86A008C6384 /* Pods_PhotoJournalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23400569066C396B58D802F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AD046B90325C708A794022 /* Pods_PhotoJournal.framework */,
+				DE39888A0229FA8E166F84B1 /* Pods_PhotoJournalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61B8074924509393004EAF61 = {
+			isa = PBXGroup;
+			children = (
+				61A75C1324566DDC00D750B7 /* README.md */,
+				61B8075424509393004EAF61 /* PhotoJournal */,
+				61B8076B24509394004EAF61 /* PhotoJournalTests */,
+				61B8075324509393004EAF61 /* Products */,
+				9C0DB38610449ADF7897BD80 /* Pods */,
+				23400569066C396B58D802F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		61B8075324509393004EAF61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61B8075224509393004EAF61 /* PhotoJournal.app */,
+				61B8076824509394004EAF61 /* PhotoJournalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61B8075424509393004EAF61 /* PhotoJournal */ = {
+			isa = PBXGroup;
+			children = (
+				61B8075524509393004EAF61 /* AppDelegate.swift */,
+				61A9244D24614DF200774523 /* Model.swift */,
+				61B8075724509393004EAF61 /* SceneDelegate.swift */,
+				61B8077B2453EF27004EAF61 /* UIViewControllerExt.swift */,
+				61C9D78B2454912C00C1EB9E /* UIColorExt.swift */,
+				61B8078024540730004EAF61 /* Views */,
+				61B8077F245406E6004EAF61 /* ViewControllers */,
+				61B8075E24509394004EAF61 /* Assets.xcassets */,
+				61B8076024509394004EAF61 /* LaunchScreen.storyboard */,
+				61B8076324509394004EAF61 /* Info.plist */,
+				61A75C142456A0B000D750B7 /* GoogleService-Info.plist */,
+			);
+			path = PhotoJournal;
+			sourceTree = "<group>";
+		};
+		61B8076B24509394004EAF61 /* PhotoJournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				61B8076C24509394004EAF61 /* PhotoJournalTests.swift */,
+				61B8076E24509394004EAF61 /* Info.plist */,
+			);
+			path = PhotoJournalTests;
+			sourceTree = "<group>";
+		};
+		61B8077F245406E6004EAF61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				61B8077D2454051D004EAF61 /* PhotoJournalViewController.swift */,
+				61B8075924509393004EAF61 /* LoginSignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61B8078024540730004EAF61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61B8077724528A65004EAF61 /* LoginView.swift */,
+				61C9D78D245499FC00C1EB9E /* JournalView.swift */,
+				61A75C112454FD5000D750B7 /* MediaSelectorView.swift */,
+				61B807792452AFF9004EAF61 /* RegisterView.swift */,
+				61B807812454074B004EAF61 /* PhotoCollectionView.swift */,
+				61B8078324541323004EAF61 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C0DB38610449ADF7897BD80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D9F4A2CD821DD3651BEB7F5 /* Pods-PhotoJournal.debug.xcconfig */,
+				7A583D7750FD19BAE3D7753D /* Pods-PhotoJournal.release.xcconfig */,
+				4CB0D6DC6408D7FAB56E1A2F /* Pods-PhotoJournalTests.debug.xcconfig */,
+				D63676659C7244CF4A9FDE88 /* Pods-PhotoJournalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61B8075124509393004EAF61 /* PhotoJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61B8077124509394004EAF61 /* Build configuration list for PBXNativeTarget "PhotoJournal" */;
+			buildPhases = (
+				9C0DD5A8C25F55CC422D348F /* [CP] Check Pods Manifest.lock */,
+				61B8074E24509393004EAF61 /* Sources */,
+				61B8074F24509393004EAF61 /* Frameworks */,
+				61B8075024509393004EAF61 /* Resources */,
+				FB3ED6C7A5572127793C787E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoJournal;
+			productName = PhotoJournal;
+			productReference = 61B8075224509393004EAF61 /* PhotoJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61B8076724509394004EAF61 /* PhotoJournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61B8077424509394004EAF61 /* Build configuration list for PBXNativeTarget "PhotoJournalTests" */;
+			buildPhases = (
+				1318CC81CA271469BD742521 /* [CP] Check Pods Manifest.lock */,
+				61B8076424509394004EAF61 /* Sources */,
+				61B8076524509394004EAF61 /* Frameworks */,
+				61B8076624509394004EAF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61B8076A24509394004EAF61 /* PBXTargetDependency */,
+			);
+			name = PhotoJournalTests;
+			productName = PhotoJournalTests;
+			productReference = 61B8076824509394004EAF61 /* PhotoJournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61B8074A24509393004EAF61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = HazeStudio;
+				TargetAttributes = {
+					61B8075124509393004EAF61 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					61B8076724509394004EAF61 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 61B8075124509393004EAF61;
+					};
+				};
+			};
+			buildConfigurationList = 61B8074D24509393004EAF61 /* Build configuration list for PBXProject "PhotoJournal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61B8074924509393004EAF61;
+			productRefGroup = 61B8075324509393004EAF61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61B8075124509393004EAF61 /* PhotoJournal */,
+				61B8076724509394004EAF61 /* PhotoJournalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61B8075024509393004EAF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B8076224509394004EAF61 /* LaunchScreen.storyboard in Resources */,
+				61B8075F24509394004EAF61 /* Assets.xcassets in Resources */,
+				61A75C152456A0B000D750B7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B8076624509394004EAF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1318CC81CA271469BD742521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoJournalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0DD5A8C25F55CC422D348F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoJournal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3ED6C7A5572127793C787E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoJournal/Pods-PhotoJournal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoJournal/Pods-PhotoJournal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoJournal/Pods-PhotoJournal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61B8074E24509393004EAF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9D78E245499FC00C1EB9E /* JournalView.swift in Sources */,
+				61B8075A24509393004EAF61 /* LoginSignUpViewController.swift in Sources */,
+				61A75C122454FD5000D750B7 /* MediaSelectorView.swift in Sources */,
+				61B8077A2452AFF9004EAF61 /* RegisterView.swift in Sources */,
+				61B8077C2453EF27004EAF61 /* UIViewControllerExt.swift in Sources */,
+				61C9D78C2454912C00C1EB9E /* UIColorExt.swift in Sources */,
+				61A9244E24614DF200774523 /* Model.swift in Sources */,
+				61B8077E2454051D004EAF61 /* PhotoJournalViewController.swift in Sources */,
+				61B8075624509393004EAF61 /* AppDelegate.swift in Sources */,
+				61B8078424541323004EAF61 /* PhotoCollectionViewCell.swift in Sources */,
+				61B807822454074B004EAF61 /* PhotoCollectionView.swift in Sources */,
+				61B8077824528A65004EAF61 /* LoginView.swift in Sources */,
+				61B8075824509393004EAF61 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B8076424509394004EAF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B8076D24509394004EAF61 /* PhotoJournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61B8076A24509394004EAF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61B8075124509393004EAF61 /* PhotoJournal */;
+			targetProxy = 61B8076924509394004EAF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61B8076024509394004EAF61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61B8076124509394004EAF61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61B8076F24509394004EAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61B8077024509394004EAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61B8077224509394004EAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9F4A2CD821DD3651BEB7F5 /* Pods-PhotoJournal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = PhotoJournal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazewritescode.projects.PhotoJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61B8077324509394004EAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A583D7750FD19BAE3D7753D /* Pods-PhotoJournal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = PhotoJournal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazewritescode.projects.PhotoJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61B8077524509394004EAF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB0D6DC6408D7FAB56E1A2F /* Pods-PhotoJournalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = PhotoJournalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazewritescode.projects.PhotoJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoJournal.app/PhotoJournal";
+			};
+			name = Debug;
+		};
+		61B8077624509394004EAF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63676659C7244CF4A9FDE88 /* Pods-PhotoJournalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E3GPM4HDT;
+				INFOPLIST_FILE = PhotoJournalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hazewritescode.projects.PhotoJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoJournal.app/PhotoJournal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61B8074D24509393004EAF61 /* Build configuration list for PBXProject "PhotoJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B8076F24509394004EAF61 /* Debug */,
+				61B8077024509394004EAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61B8077124509394004EAF61 /* Build configuration list for PBXNativeTarget "PhotoJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B8077224509394004EAF61 /* Debug */,
+				61B8077324509394004EAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61B8077424509394004EAF61 /* Build configuration list for PBXNativeTarget "PhotoJournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B8077524509394004EAF61 /* Debug */,
+				61B8077624509394004EAF61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61B8074A24509393004EAF61 /* Project object */;
+}
